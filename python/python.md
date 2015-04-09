@@ -1,25 +1,26 @@
 * 命名規則
+
+常见命名规则
+    module_name,
+    package_name,
+    ClassName,
+    method_name,
+    ExceptionName,
+    function_name,
+    GLOBAL_CONSTANT_NAME,
+    global_var_name,
+    instance_var_name,
+    function_parameter_name,
+    local_var_name.
     
-     module_name,
-     package_name,
-     ClassName,
-     method_name,
-     ExceptionName,
-     function_name,
-     GLOBAL_CONSTANT_NAME,
-     global_var_name,
-     instance_var_name,
-     function_parameter_name,
-     local_var_name.
 
-
-- 避免使用的命名法
+避免使用的命名法
 
     1. 除了計數器及迭代器之外，不要用單一字母為變數命名。
     2. package 及 module 的名稱中不要包含破折號 "-"
     3. 變數名稱前後不要加上兩個雙底線 (如：__double_leading_and_trailing_underscore__ )。
 
-- 命名慣例
+命名慣例
 
     1. "internal" 指 module 內或 class 中的 private 或 protected 的變數。
     2. 要保護 module 變數或函式，可在變數名稱前加上單一底線，若用 from foo import * 時，這些變數不會被 import。
@@ -32,7 +33,7 @@
     雖然某些既有的 module 命名仍使用大寫字母(如：CapWords.py)，但不建議這麼做，因為當 module 名稱與 class 名稱相同時它 們將難以分辨。
     (你通常寫 import StringIO 或 from StringIO import StringIO ?)
 
-- 命名通則
+命名通則
 
     package: lower_with_under (public)
     
